@@ -11,5 +11,16 @@
  */
 
 var evenOccurrence = function(arr) {
-  // Your work here!
+  var compareArr = []
+  for(var i = 0; i < arr.length;i++){ //look through the array, 
+    if(arr[i]){
+
+    }
+  }
 };
+
+
+//find the first thing couple of things in the arr that are an even num
+//loop through the array
+//when found, return it
+//if none exist, return null
