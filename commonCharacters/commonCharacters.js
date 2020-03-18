@@ -11,5 +11,18 @@
  */
 
 var commonCharacters = function(string1, string2) {
-  // TODO: Your code here!
+  //locate letter in string1 check through string 2 to see if it appears, if not, do nothing.
+  //if it is there, push it into an empty arr
+  //at the end return a joined string
+  var returnArr = []
+  var letterCheck = string1[0];
+  for(var i = 0; i < string1.length; i++){
+    for(var j = 0; i < string2.length; j++){
+      if(letterCheck === string2[j]){
+        returnArr.push(string2[j])
+        letterCheck++
+      }
+    }
+  }
+  return returnArr.join("")
 };
