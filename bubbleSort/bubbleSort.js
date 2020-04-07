@@ -9,4 +9,35 @@
 
 // NOTE: DO NOT use JavaScript’s built-in sorting function (Array.prototype.sort).
 
-function bubbleSort(array) {}
+function bubbleSort(array) {
+    var holder;
+    for(var i = 1; i < array.length; i++){
+        for(var j = 0; j < array.lenth-1; j++){
+            if(array[j] > array[i]){
+              holder = array[i]
+              array[j] = holder
+              array[i] = array[j]
+            }
+        }
+    }
+    return array
+}
+
+
+
+/*
+I unsorted array
+O sorted array
+C do not use array.sort
+E 
+
+Use a nested for loop to iterate over the array to see which element is bigger
+If the bigger element is on the left, swap it with the right, if it's smaller, leave it
+return the sorted array.
+
+
+
+
+
+
+*/
