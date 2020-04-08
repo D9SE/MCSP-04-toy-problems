@@ -49,3 +49,25 @@ var insertionSort = function(array) {
   // Your code goes here. Feel free to add helper functions if needed.
   return array;
 };
+
+/*
+Not a clue how to approach this, I'm just going to pseudo
+I semi-unsorted array
+O array of sorted
+C n/a
+E n/a
+
+iterate through the array
+  check if the number to the left is bigger than the one on the right
+    if so, switch em
+    if not, leave em alone
+  return sorted array
+
+
+create a for loop to iterate over input array
+  if array[i] is greater than array[i+1]
+    if so, store array[i+1] in a storage variable
+      change arrayi+1 to i
+      change array i to storage
+  return the sorted array
+*/
