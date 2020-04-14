@@ -96,6 +96,30 @@
  */
 
 var mergeSort = function(array) {
-  // Your code here.
+  if(array.length < 2){
+    return array
+  };
+  var middle = Math.floor(array.length / 2);
+  var leftArr = array.slice(0, middle);
+  var rightArr = array.slice(middle);
+  var sorted = mergeSort(leftArr).concat(mergeSort(rightArr))
+  return sorted
+  //theorhetical sorting step
+// return the arrays concated based on size
+
 };
 
+/*
+I array of unsorted numbers
+O array of sorted numbers
+C 
+E if array can't be split, return input
+
+if array can't be split, return the input array
+find the middle of the array
+split the array into two arrays
+left array and right
+have to sort the split arrays
+then combine the arrays and return them
+
+*/ 
