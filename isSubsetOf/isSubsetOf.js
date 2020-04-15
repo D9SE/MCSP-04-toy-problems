@@ -1,6 +1,6 @@
 /*
  * Make an array method that can return whether or not a context array is a
- * subset of an input array.  To simplify the problem, you can assume that neither
+ * subset of an  input array. To simplify the problem, you can assume that neither
  * array will contain objects or arrays as elements within them.
  *
  *
@@ -22,5 +22,24 @@
  */
 
 Array.prototype.isSubsetOf = function(arr) {
-  // your code here
+  for(var i = 0; i < arr.length; i++){
+    if(arr[i] === Array && i === arr.lenth-1){
+      return true
+    }
+    else {
+      return false
+    }
+  }
 };
+
+
+/* 
+I arr
+O boolean
+C 
+E
+  take an array
+   iterate through it
+    check if all the elements in it match the thing left of the .
+    return true or false
+*/
