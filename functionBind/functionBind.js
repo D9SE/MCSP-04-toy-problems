@@ -23,8 +23,10 @@
  *
  */
 
-var bind = function() {
-  // TODO: Your code here
+var bind = function(obj) {
+  return function (){
+    alert(obj.name)
+  }
 };
 
 /*
